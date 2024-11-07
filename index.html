@@ -4,15 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Piedra, papel, tijera</title>
 </head>
 <body>
-  <button class="boton-jugada" data-jugada="piedra">Piedra</button>
-  <button class="boton-jugada" data-jugada="papel">Papel</button>
-  <button class="boton-jugada" data-jugada="tijera">Tijera</button>
-  <div id="resultados"></div>
-  <p id="contador-usuario">Tus puntos: 0</p>
-  <p id="contador-ordenador">Puntos de la máquina: 0</p>
+  <h1>Juego Piedra Papel Tijera </h1>
+  <div id="btn">
+    <button class="boton-jugada" data-jugada="piedra" >Piedra <i id="piedraicon" class="fa-regular fa-hand-back-fist"></i></button>
+    <button class="boton-jugada" data-jugada="papel">Papel <i id="papelicon" class="fa-regular fa-hand"></i></button>
+    <button class="boton-jugada" data-jugada="tijera">Tijera <i id="tijeraicon" class="fa-regular fa-hand-scissors"></i></button>
+  </div>
+  <div class="container">
+    <div id="resultados"></div>
+    <div class="contadores">
+      <p id="contador-usuario">Tus puntos: 0</p>
+      <p id="contador-ordenador">Puntos de la máquina: 0</p>
+    </div>
+  </div>
+ 
   <script src="./js/script.js"></script>
 </body>
 </html>

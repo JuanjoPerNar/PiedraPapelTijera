@@ -53,7 +53,7 @@ botonJugada.forEach(boton => {
     const jugadaOrdenador = jugadaAleatoria();
     const resultado = obtenerResultado(jugadaUsuario, jugadaOrdenador);
     
-    mostrarResultado("Tú elegiste: " + jugadaUsuario + " . El ordenador eligió " + jugadaOrdenador + " . " + resultado);
+    mostrarResultado("Tú elegiste: " + jugadaUsuario + " . El ordenador eligió: " + jugadaOrdenador + " . " + resultado);
     actualizarPuntuacion();
   });
 });

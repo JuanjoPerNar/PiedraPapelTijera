@@ -1,16 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
   text-align: center;
-  background-color: #f4f4f4;
+  background-color: #98f1ea;
+  background: radial-gradient(#98f1ea, #3792d29c, #2f57a6d4);
+  height: 100vh;
 }
+
+h1{
+  margin: 50px 0 0 0;
+  padding: 8px;
+}
+
+#btn{
+  display: flex;
+  justify-content: space-around;
+  margin: 100px;
+}
+
+#tijeraicon{
+  transform:rotate(90deg);
+  margin-left: 5px;
+}
+
+#papelicon{
+  margin-left: 5px;
+}
+
+#piedraicon{
+  margin-left: 5px;
+}
+
 .boton-jugada {
-  background-color: #3498db;
-  color: #070101;
+  background-color: #18a1b9;
+  color: #ffffff;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  border: none;
+  border-radius: 8px;
 }
+
+.boton-jugada:hover {
+  background-color: #ffffff;
+  color: #18a1b9;
+  border: 2px #18a1b9 solid;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  margin: 0 50px;
+}
+
 #resultados {
   font-size: 20px;
   margin: 20px 0;
+  position: relative;
+  top: 75px;
 }
+
+.contadores{
+  display: flex;
+  flex-direction: column;
+  border: whitesmoke 5px dashed;
+  text-align: center;
+  width: fit-content;
+  padding: 10px 25px;
+  font-size: 20px;
+  margin: 30px;
+}
+
